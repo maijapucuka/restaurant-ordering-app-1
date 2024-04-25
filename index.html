@@ -1,0 +1,36 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="header-text">
+                <h1>Jimmy's Diner</h1>
+                <p class="header-subtitle">The best burgers and pizzas in town</p>
+            </div>
+        </header>
+        <main>
+            <div id="order-menu" class="order-menu"></div>
+            <div id="user-order" class="display-none">
+                <h2>Your order</h2>
+                <div id="user-order-container" class="user-order-text"></div>
+                <button id="complete-order-btn" class="secondary-btn">Complete order</button>
+            </div>
+        </main>
+        <div class="display-none" id="card-details">
+            <form id="form">
+                <h3>Enter card details</h3>
+                <input id="user-name" type="text" placeholder="Enter your name" required>
+                <input type="number" placeholder="Enter card number" required>
+                <input type="number" placeholder="Enter CVV" required>
+                <button id="pay-btn" class="secondary-btn card-details-btn">Submit</button>
+            </form>
+        </div>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+

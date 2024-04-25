@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+hr {
+    height: 1px;
+    width: 100%;
+    color: #8B8B8B;
+}
+
+h1 {
+    font-size: 39px;
+    line-height: 24px;
+    margin: 0
+}
+
+h3 {
+    margin-top: 0;
+    padding-left: 3em;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 28px;
+    margin: 0;
+}
+
+/* HEADER */
+
+header {
+    background: url('burger.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 250px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 3em;
+}
+
+.header-text {
+    color: #FFF;
+    font-family: Smythe;
+    margin: 0;
+}
+
+.header-subtitle {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* ORDER SECTION */
+
+main {
+    margin: 0 auto;
+    background-color: #F5F5F5;
+}
+
+.order-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+    padding: 3em 2em;
+}
+
+.order-item {
+    display: flex;
+    gap: 3em;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-text {
+    width: 80%;
+    font-family: "Smythe", system-ui;
+}
+
+.data-ingredients {
+    color: #8B8B8B;
+}
+
+.data-price {
+    font-size: 20px;
+    margin: 0;
+}
+
+.order-icon > p {
+    width: 60px;
+    height: 60px;
+    font-size: 52px;
+}
+
+.order-btn {
+    border-radius: 50%;
+    cursor: pointer;
+    color: #3C3C3C;
+    margin-left: auto;
+    text-decoration: none;
+    border: #DEDEDE 1px solid;
+    padding: .8em 1em;
+}
+
+/* PAYMENT STATE */
+
+.card-details {
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 160px;
+    background: white;
+    width: 90%;
+    margin: auto;
+    border-radius: 6px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: .6em;
+    width: 100%;
+    padding: 3em;
+}
+
+input {
+    padding: .8em;
+}
+
+/* .card-details-btn {
+    margin-top: .8em;
+} */
+
+.card-details-btn {
+    width: 100%;
+    background: #16DB99;
+    color: white;
+    font-weight: 700;
+    border: none;
+    padding: .8em;
+    margin-top: .8em;
+}
+
+/* CHECKOUT STATE */
+
+.display-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 0 2em 2em;
+    text-align: center;
+    color: black;
+    font-family: "Smythe", system-ui;
+}
+
+.user-order-item, .user-order-complete {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    align-items: center;
+}
+
+.user-order-text-left {
+    display: flex;
+    gap: .5em;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.user-order-text-left > button {
+    background: transparent;
+    border: none;
+    color: #BBBBBB;
+    font-size: 12px;
+}
+
+.hr-black {
+    color: black;
+    background-color: black;
+}
+
+.total-price {
+    font-size: 28px;
+}
+
+/* COMPLETE STATE */
+
+.completed-order-text {
+    text-align: center;
+}
+
+.completed-order-text > h4 {
+    color: #065F46;
+    font-size: 32px;
+}
+
+/* UTILITY */
+
+.display-none {
+    display: none;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 900px) {
+  main {
+    width: 60%;
+  }
+  
+  body {
+    background-color: #F5F5F5;
+  }
+}
